@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+.social-media img:hover, footer li:hover {
+  cursor: pointer;
+  color:hsl(171, 66%, 44%);
+}
+
+/* mobile devices */
+
+header {
+  background: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header, main, footer, .tech-companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6em .8em;
+}
+
+header {
+  padding-bottom: 0;
+}
+
+.text, .btn-ios, .btn-mac, .img, .download{
+  width: 100%;
+}
+
+.text {
+  margin: 3em 0;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h1, h2, h3 {
+  margin-bottom: .5em;
+}
+
+.btn-ios, .btn-mac {
+  background: none;
+  border: none;
+  padding: 1.2em;
+  border-radius: 50px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.btn-ios:hover, .btn-mac:hover {
+  cursor: pointer;
+}
+
+.btn-ios:hover {
+  box-shadow: 2px 3px 11px 2px hsl(171, 66%, 44%);
+-webkit-box-shadow: 2px 3px 11px 2px hsl(171, 66%, 44%);
+-moz-box-shadow: 2px 3px 11px 2px hsl(171, 66%, 44%);
+}
+
+.btn-mac:hover {
+  box-shadow: 2px 3px 11px 2px hsl(233, 100%, 69%);
+-webkit-box-shadow: 2px 3px 11px 2px hsl(233, 100%, 69%);
+-moz-box-shadow: 2px 3px 11px 2px hsl(233, 100%, 69%);
+}
+
+.btn-ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.btn-mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+footer {
+  background-color: hsl(201, 11%, 96%);
+}
+
+ul {
+  list-style: none;
+  margin: 4em 0;
+}
+
+li {
+  padding: .75em;
+  color: #666;
+}
+
+footer .logo {
+  height: 20%;
+  width: 20%;
+}
+
+.social-media img  {
+  padding: 1em;
+}
+
+.tech-companies img {
+  padding: 2em;
+}
+
+/* Desktop style */
+@media only screen and (min-width: 750px) {
+  p {
+    line-height: 2;
+  }
+  header {
+    background: url("./images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+  }
+
+  header .text {
+    width: 45%;
+  }
+
+  .btn-ios, .btn-mac {
+    width: 15%;
+    margin: .25em;
+  }
+
+  main {
+    padding: 5em 15em;
+  }
+
+  .snippets {
+    width: 80%;
+  }
+
+  .snip-feature {
+    position: relative;
+    right: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 140%;
+  }
+
+  .snip-feature .img {
+    width: 60%;
+  }
+
+  .features {
+    text-align: left;
+    margin-left: 4em;
+  }
+
+  .features-intro {
+    margin: 10em 0;
+  }
+
+  .supercharge-workflow, .tech-companies, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .promo .btn-ios, .promo .btn-mac {
+    width: 20%;
+  }
+
+  footer {
+    justify-content: space-between;
+    height: 5px;
+  }
+
+  footer .logo {
+    width: 3.5%;
+    height: 50px;
+  }
+}
